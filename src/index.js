@@ -1,7 +1,9 @@
+require("dotenv/config");
 const express = require("express");
 const bearerToken = require("express-bearer-token");
 const PORT = process.env.PORT || 8000;
 //database
+console.log(PORT);
 const client = require("../connection");
 
 const app = express();
