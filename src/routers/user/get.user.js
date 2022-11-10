@@ -15,3 +15,4 @@ const getUserList = async (req, res, next) => {
   }
 };
 router.get("/userList", getUserList);
+module.exports = router;
