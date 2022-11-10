@@ -5,20 +5,20 @@ const {
   DB_USER,
   DB_PASSWORD,
   DB_NAME,
-  HerokuHost,
-  HerokuUser,
-  HerokuDatabase,
-  HerokuPort,
-  HerokuPassword,
+  HEROKUHOST,
+  HEROKUUSER,
+  HEROKUDATABASE,
+  HEROKUPORT,
+  HEROKUPASSWORD,
 } = process.env;
 
 module.exports = {
   development: {
-    username: DB_USER || HerokuUser,
-    password: "123Qazwsx!@#" || HerokuPassword,
-    database: DB_NAME || HerokuDatabase,
-    host: DB_HOST || HerokuHost,
-    port: 5432 || HerokuPort,
+    username: DB_USER || HEROKUUSER,
+    password: "123Qazwsx!@#" || HEROKUPASSWORD,
+    database: DB_NAME || HEROKUDATABASE,
+    host: DB_HOST || HEROKUHOST,
+    port: 5432 || HEROKUPORT,
     dialect: "postgres",
 
     dialectOptions: {
