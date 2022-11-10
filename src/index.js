@@ -1,7 +1,7 @@
 require("dotenv/config");
 const express = require("express");
 const bearerToken = require("express-bearer-token");
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000 || process.env.HerokuPort;
 //database
 console.log(PORT);
 const client = require("../connection");
