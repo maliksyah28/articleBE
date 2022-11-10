@@ -21,7 +21,7 @@ app.use(cors());
 app.use("/users", userRouter);
 app.use("/article", articleRouter);
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.send(`Hello, this is my API`);
 });
 app.use((error, req, res, next) => {
